@@ -41,7 +41,7 @@ if __name__ == "__main__":
     parser.add_argument('--results_path', default='pc_extractions', help='path to dump results')
 
     parser.add_argument('-c', '--const', type=float, default=1e-3, help='Normalizing const for the power iterations')
-    parser.add_argument('--n_evs', type=int, default=1, help='Number of eigenvectors to extract')
+    parser.add_argument('--n_evs', type=int, default=3, help='Number of eigenvectors to extract')
     parser.add_argument('-p', '--patch', nargs=4, default=None, type=int,
                         help='Set a specific patch to extract PC for. Format: x1 x2.')
     parser.add_argument('-t', '--iters', type=int, default=50, help='Amount of power iterations')

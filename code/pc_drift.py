@@ -195,7 +195,7 @@ def get_eigenvectors(ldm_stable: PipelineWrapper,
     eigval = (norm_of_Ab / const * (ldm_stable.get_sigma(t) ** 2))
     eigvecs /= const
 
-    return eigvecs, eigval, in_corr, in_norm, interm_eigvecs, interm_eigvals
+    return eigvecs, eigval.reshape(n_ev), in_corr, in_norm, interm_eigvecs, interm_eigvals
 
 
 def apply_drift(ldm_stable: PipelineWrapper,
