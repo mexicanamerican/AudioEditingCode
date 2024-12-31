@@ -45,7 +45,7 @@ if __name__ == "__main__":
     parser.add_argument('-p', '--patch', nargs=4, default=None, type=int,
                         help='Set a specific patch to extract PC for. Format: x1 x2.')
     parser.add_argument('-t', '--iters', type=int, default=50, help='Amount of power iterations')
-    parser.add_argument('-r', '--resize', nargs=2, type=int, default=(256, 256), help='Resize image to this size')
+    parser.add_argument('-r', '--resize', nargs=2, type=int, default=(512, 512), help='Resize image to this size')
     parser.add_argument('-d', '--dry', action='store_true',
                         help='Dry run, just unconditional generation without PC extraction (fast)')
 
